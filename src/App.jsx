@@ -1,7 +1,9 @@
+import Card from "./components/Card"
+
 function App() {
     return (
         <>
-            <h1>Quick Check</h1>
+            <Card />
         </>
     )
 }
