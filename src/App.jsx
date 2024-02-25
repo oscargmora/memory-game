@@ -1,9 +1,9 @@
-import Cards from "./components/Cards"
+import GameBoard from "./components/GameBoard"
 
 function App() {
     return (
         <>
-            <Cards />
+            <GameBoard />
         </>
     )
 }
