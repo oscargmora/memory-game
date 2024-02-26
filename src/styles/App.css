@@ -1,0 +1,28 @@
+@font-face {
+    font-family: cinzel;
+    src: url(../fonts/Cinzel/static/Cinzel-Medium.ttf);
+}
+
+body {
+    background-image: url(../assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #e5e7eb;
+    font-family: cinzel;
+    font-size: x-large;
+}
+
+footer {
+    text-align: center;
+}
+
+#github-link {
+    margin: 0.5em;
+    color: #e7e7e9;
+    text-decoration: none;
+}
+
+#github-link {
+    color: rgb(204, 203, 203);
+    text-decoration: none;
+}

@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+.score-board {
+    text-align: end;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.card-container {
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+}
+
+.card {
+    height: 80%;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 104vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+#win-screen {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #252d3a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+#win-screen > button {
+    background: none;
+    color: #e5e7eb;
+    border: #e5e7eb 2px solid;
+    border-radius: 5px;
+}
+
+#win-screen > button:hover {
+    cursor: pointer;
+    color: #d1d2d5;
+    border: #d1d2d5 2px solid;
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    .card {
+        height: 70%;
+    }
+}
+
+@media (min-width: 540.1px) and (max-width: 1200px) {
+    .cards-container {
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    .card {
+        height: 50%;
+    }
+}

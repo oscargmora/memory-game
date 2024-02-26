@@ -11,9 +11,9 @@ function Card(cardName) {
     }, [cardName])
 
     return (
-        <div className="card-container">
-            {data ? <img src={data.data[0].card_images[0].image_url_small} alt={data.data[0].name} id={data.data[0].id}/> : 'Loading...'}
-        </div>
+        <>
+            {data ? <img className="card" src={data.data[0].card_images[0].image_url_small} alt={data.data[0].name} id={data.data[0].id}/> : 'Loading...'}
+        </>
     )
 }
 
