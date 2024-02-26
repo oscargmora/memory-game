@@ -1,3 +1,5 @@
+# Yu-Gi-Oh Memory Game
+
 Test your memory in this Yu-Gi-Oh Memory Game! Don't click the same card twice!
 
 Live Preview --> https://yu-gi-oh-memory-game.netlify.app/
